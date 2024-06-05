@@ -37,7 +37,7 @@ Follow these simple steps to use our shipping labels:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/shaiiikh/sna-shipping-labels.git
+   git clone https://github.com/shaiiikh/sna-shipping-labels
 
 
 2. cd sna-shipping-labels

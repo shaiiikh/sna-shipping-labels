@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  z-index: 1000;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  background: #131313;
+  padding: 1rem 4rem;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.navbar .nav-item {
+  transition: 0.5s ease;
+}
+
+.navbar .nav-item .nav-link {
+  color: whitesmoke;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#Navbar > ul > li:nth-child(n) > a:hover,
+#Navbar > ul > li:nth-child(n) > a:active {
+  color: green;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.mid {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+
+.mid video {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar .btn {
+  font-weight: 600;
+  background: green;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+.navbar .btn:hover {
+  background: white;
+}
+
+.writeup {
+  position: relative;
+}
+
+.writeup p {
+  width: 55%;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+.writeup a {
+  font-weight: 600;
+  background: green;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.writeup a:hover {
+  background: white;
+}
+
+.about {
+  background: black;
+}
+
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.about .text h6 {
+  font-weight: 600;
+  color: green;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.about .text h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 2.7rem;
+}
+
+.about .text p {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.about .text a {
+  font-weight: 600;
+  background: green;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.about .text a:hover {
+  color: black;
+}
+
+.saving .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.saving .text h6 {
+  font-weight: 600;
+  color: green;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.saving .text h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 2.7rem;
+}
+
+.saving .text p {
+  color: black;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.saving .text a {
+  background: black;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.saving .text a:hover {
+  color: green;
+}
+
+.page {
+  background-color: black;
+}
+
+.page .first {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 1.1rem;
+  border-radius: 7px;
+}
+
+.page .first h5 {
+  text-align: center;
+  font-weight: 600;
+  padding: 0.6rem 3rem;
+}
+
+.page .first:hover {
+  transform: translateY(-1rem);
+  transition: 0.5s ease;
+}
+
+.signin-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.signin-form {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.signin-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signin-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.signin-form button:hover {
+  background-color: darkgreen;
+}
+
+.home-link {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.contact {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.contact h6, .contact h2 {
+  color: #333;
+}
+
+.contact p {
+  color: #555;
+}
+
+.contact a {
+  color: green;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form .form-label {
+  color: #333;
+}
+
+.contact form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact form .btn-primary {
+  background-color: green;
+  border-color: green;
+}
+
+.contact form .btn-primary:hover {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  width: 90%;
+  max-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h5 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  color: #555;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .list-unstyled .list-inline-item a {
+  color: white;
+}
+
+footer .list-unstyled .list-inline-item a:hover {
+  color: green;
+}
+
+footer .list-unstyled .list-inline-item a:active {
+  color: green;
+}
+
+footer .text-center p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar .nav-item .nav-link {
+    padding: 0 0.5rem;
+  }
+  .mid video {
+    height: auto;
+  }
+  .mid {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .writeup p {
+    width: 90%;
+  }
+}
